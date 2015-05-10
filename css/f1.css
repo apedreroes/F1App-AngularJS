@@ -1,0 +1,143 @@
+.page {
+	bottom: 0;
+	position: absolute;
+	top: 0;
+}
+
+
+.nueva {
+	font-size: x-small;
+}
+
+.page-pilotos.ng-leave         {
+    -webkit-transform-origin: 0% 0%;
+	-webkit-animation: slideOutLeft 0.5s both ease-in;
+	-moz-transform-origin: 0% 0%;
+	-moz-animation: slideOutLeft 0.5s both ease-in;
+	transform-origin: 0% 0%;
+	animation: slideOutLeft 0.5s both ease-in;
+}
+
+.page-pilotos.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+.page-piloto.ng-leave         {
+    -webkit-transform-origin: 0% 0%;
+	-webkit-animation: slideOutLeft 0.5s both ease-in;
+	-moz-transform-origin: 0% 0%;
+	-moz-animation: slideOutLeft 0.5s both ease-in;
+	transform-origin: 0% 0%;
+	animation: slideOutLeft 0.5s both ease-in;
+}
+
+.page-piloto.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+/* about ------------------------ */
+.page-carreras.ng-leave        {
+    -webkit-animation:slideOutLeft 0.5s both ease-in;
+	-moz-animation:slideOutLeft 0.5s both ease-in;
+	animation:slideOutLeft 0.5s both ease-in;   
+}
+.page-carreras.ng-enter 		{  
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;    
+}
+
+/* contact ---------------------- */
+.page-constructores.ng-leave      {
+    -webkit-transform-origin: 50% 50%;
+	-webkit-animation: slideOutLeft .5s both ease-in;
+	-moz-transform-origin: 50% 50%;
+	-moz-animation: slideOutLeft .5s both ease-in;
+	transform-origin: 50% 50%;
+	animation: slideOutLeft .5s both ease-in;
+}
+.page-constructores.ng-enter 		{ 
+    -webkit-animation:slideInRight 0.5s both ease-in;
+	-moz-animation:slideInRight 0.5s both ease-in;
+	animation:slideInRight 0.5s both ease-in;  
+}
+
+
+
+
+
+/* slide in from the right */
+@keyframes slideInRight {
+	from 	{ transform:translateX(100%); }
+	to 		{ transform: translateX(0); }
+}
+@-moz-keyframes slideInRight {
+	from 	{ -moz-transform:translateX(100%); }
+	to 		{ -moz-transform: translateX(0); }
+}
+@-webkit-keyframes slideInRight {
+	from 	{ -webkit-transform:translateX(100%); }
+	to 		{ -webkit-transform: translateX(0); }
+}
+
+
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+@-moz-keyframes slideOutLeft {	
+	to 		{ -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+
+.reveal-modal{
+  min-height: 300px;
+}
+
+.ng-modal {
+  transition: 0.2s ease-in-out opacity;
+}
+
+.ng-modal .reveal-modal {
+  display: block;
+  visibility: visible;
+}
+
+.ng-modal .reveal-modal-bg {
+  display: block;
+}
+
+.ng-modal.ng-hide-add,
+.ng-modal.ng-hide-remove{
+  display: block !important;
+}
+
+.ng-modal.ng-hide{
+  opacity: 0;
+}
+
+.reveal-modal{
+  transition: 0.2s ease-in-out all;
+  transition-delay: 0.2s;
+  -webkit-transform: scale(1);
+  opacity: 1;
+}
+
+.reveal-modal.ng-hide-add,
+.reveal-modal.ng-hide-remove{
+  display: block !important;
+}
+
+.reveal-modal.ng-hide{
+  -webkit-transform: scale(0.9);
+  opacity: 0;
+}
+
+
